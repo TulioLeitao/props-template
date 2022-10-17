@@ -1,14 +1,14 @@
-function Carro() {
+function Carro(props) {
   return (
     <div>
-      <h2>Volksvagem</h2>
+      <h2>{props.carro.nomeDoCarro}</h2>
       <ul>
-        <li>Cor: Azul</li>
-        <li>Ano: 2018</li>
-        <li>Flex: Não</li>
+        <li>{props.carro.cor}</li>
+        <li>{props.carro.ano}</li>
+        <li>{props.carro.flex}</li>
       </ul>
     </div>
   );
-}
+};
 
 export default Carro;
